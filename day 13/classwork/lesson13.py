@@ -7,7 +7,7 @@ if jemala_age > meraba_age:
     print("ჩაირბინე მაღაზიაში ჯემალ")
 elif jemala_age == meraba_age:
 
-else:
+
     print("წამოდი")
 
 # if = თუ
