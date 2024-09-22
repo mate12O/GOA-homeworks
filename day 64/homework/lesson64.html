@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტექსტის სტილიზაცია</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        h1 {
+            color: #2c3e50; 
+            text-align: center;
+            text-transform: uppercase; 
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold; 
+        }
+
+        #uniqueId {
+            font-style: italic;
+            color: #e74c3c; 
+        }
+
+        .text-section {
+            border: 1px solid #ccc;
+            padding: 20px; 
+            background-color: white; 
+        }
+
+        h2 {
+            color: #8e44ad;
+            text-decoration: underline;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text-section">
+        <h1>შესახებ</h1>
+        <p>ეს არის მაგალითი ტექსტისა, რომელიც <span class="highlight">გასტილულია</span> სხვადასხვა სელექტორების გამოყენებით.</p>
+        <h2>სექციები</h2>
+        <ul>
+            <li>პირველი ელემენტი</li>
+            <li>მეორე ელემენტი</li>
+            <li>მესამე ელემენტი</li>
+        </ul>
+        <p id="uniqueId">ეს არის უნიკალური აბზაცი, რომელსაც აქვს თავისი ინდივიდუალური სტილი.</p>
+    </div>
+</body>
+</html>

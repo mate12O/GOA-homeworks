@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #444;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+/* Descendant Selector Styles */
+main .content-section h2 {
+    color: #333;
+}
+
+/* ID Specific Styles */
+#main-header h1 {
+    font-size: 2.5rem;
+}
+
+#main-footer p {
+    margin: 0;
+}
