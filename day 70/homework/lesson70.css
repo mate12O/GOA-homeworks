@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e74c3c; /* წითელი */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #3498db; /* ცისფერი */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-1 {
+    background-color: #e7f9e7; /* მწვანე ფონი */
+}
+
+.input-2 {
+    background-color: #e0f7fa; /* ცისფერი ფონი */
+}
+
+.input-3 {
+    background-color: #fff3e0; /* ყვითელი ფონი */
+}
+
+.btn {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #e74c3c; /* წითელი ღილაკი */
+    color: white;
+}
+
+.btn-2 {
+    background-color: #3498db; /* ცისფერი ღილაკი */
+    color: white;
+}
+
+.btn-3 {
+    background-color: #f39c12; /* ნარინჯისფერი ღილაკი */
+    color: white;
+}
