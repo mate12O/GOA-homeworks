@@ -1,0 +1,28 @@
+<style>
+    ol {
+        list-style-type: none; /* Removes default numbering */
+    }
+    ul {
+        list-style-type: upper-alpha; /* Changes bullets to upper-case letters */
+    }
+    ul li {
+        counter-increment: item; /* Increments a counter for each list item */
+        margin-bottom: 5px;
+    }
+    ul li::before {
+        content: counter(item) ". "; /* Adds numbers before each list item */
+    }
+    ol li {
+        margin-bottom: 5px;
+    }
+</style>
+
+<ol>
+    <li>Ordered Item 1</li>
+    <li>Ordered Item 2</li>
+</ol>
+
+<ul>
+    <li>Unordered Item A</li>
+    <li>Unordered Item B</li>
+</ul>
