@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ლინკების სტილიზაცია</title>
+    <style>
+        /* 1. არასდროს დაჭერილი ლინკის ფერი */
+        a:link {
+            color: blue; /* ლურჯი */
+            text-decoration: none; /* ხაზგასმა გამორთულია */
+        }
+
+        /* 2. მონახულებული ლინკის ფერი */
+        a:visited {
+            color: purple; /* იასამნისფერი */
+        }
+
+        /* 3. მაუსის ლინკზე გადატარებისას სტილი */
+        a:hover {
+            color: white; /* ტექსტის ფერი */
+            background-color: blue; /* ფონდის ფერი */
+        }
+
+        /* 4. ლინკზე დაჭერის მომენტში */
+        a:active {
+            background-color: darkblue; /* ფონდის მუქი ფერი */
+            font-size: 1.1em; /* ტექსტის ზომის გაზრდა */
+        }
+
+        /* 5. ნორმალურ მდგომარეობაში შავი ლინკი */
+        .black-link {
+            color: black; /* შავი */
+            text-decoration: none; /* ხაზგასმა გამორთულია */
+        }
+
+        /* 6. მუქი ნაცრისფერი :hover-ზე */
+        .black-link:hover {
+            color: darkgray; /* მუქი ნაცრისფერი */
+        }
+
+        /* 7. ხაზგასმა :hover მდგომარეობაში */
+        a.underline-hover:hover {
+            text-decoration: underline; /* ხაზგასმა */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ლინკების სტილიზაცია</h2>
+    <p>
+        <a href="#">ლინკი 1</a><br>
+        <a href="#">ლინკი 2</a><br>
+        <a href="#" class="underline-hover">ლინკი 3 (ხაზგასმით)</a><br>
+        <a href="#" class="black-link">შავი ლინკი</a>
+    </p>
+
+</body>
+</html

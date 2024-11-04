@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 15px 20px;
+}
+
+.styled-table th {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #3e8e41; /* სხვადასხვა სტილი */
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table td {
+    border: 1px dashed #ccc; /* განსხვავებული სტილი */
+}
+
+.styled-table tr:hover {
+    background-color: #ddd;
+}
