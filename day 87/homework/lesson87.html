@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby - Painting</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* მთლიანი ეკრანის სიმაღლე */
+            background: linear-gradient(to bottom, #f2f2f2, #cce7ff);
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .hobby-content {
+            position: absolute;
+            top: 50%; /* ცენტრში */
+            left: 50%; /* ცენტრში */
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .hobby-content h1 {
+            font-size: 2.5rem;
+            color: #0056b3;
+            margin: 0 0 10px;
+        }
+        .hobby-content p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .hobby-content img {
+            width: 100px;
+            height: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hobby-content">
+            <h1>Painting</h1>
+            <p>Expressing emotions through colors and strokes. It's my way to relax and create!</p>
+            <img src="https://via.placeholder.com/100" alt="Painting Icon">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* ელემენტები განლაგდება რიგში */
+            justify-content: space-around; /* თანაბარი დაშორება */
+            align-items: center; /* ვერტიკალური ცენტრირება */
+            align-content: stretch; /* მრავალხაზიანი კონტენტის გაწელვა */
+            flex-wrap: wrap; /* ელემენტების გადატანა ახალ ხაზზე */
+            height: 300px; /* სიმაღლის განსაზღვრა */
+            border: 2px solid black; /* ჩარჩო უკეთესი ხედვისთვის */
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+</body>
+</html>

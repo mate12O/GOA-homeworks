@@ -1,0 +1,90 @@
+/* 
+1. position: აღწერს, როგორ განთავსდეს ელემენტი გვერდზე. 
+2. ძირითადი მნიშვნელობები:
+   - static (ძირითადი მნიშვნელობა): ელემენტი ჩვეულებრივ დოკუმენტის ნაკადის მიხედვით მდებარეობს.
+   - relative: ელემენტი მისი ჩვეულებრივი მდებარეობიდან გადანაცვლდება offset-ებით (top, right, bottom, left).
+   - absolute: ელემენტი ფიქსირდება უახლოესი parent ელემენტის მიმართ, რომელიც relative ან absolute პოზიცირებას იყენებს.
+   - fixed: ელემენტი ეკრანზე ფიქსირდება და არ მოძრაობს გვერდის გადახვევისას.
+*/
+
+
+/* 
+box-sizing: border-box:
+- ეს თვისება განსაზღვრავს, როგორ ითვლება ელემენტის საერთო ზომა (width და height).
+- როცა box-sizing: border-box აქტიურია:
+   საერთო ზომაში შედის ელემენტის შიდა დაშორება (padding) და ჩარჩო (border).
+
+რატომ არის კარგი მისი გამოყენება?
+- Layouts უფრო მარტივად მართული ხდება.
+- თავიდან ავიცილებთ ცდომილებებს ელემენტების ზომებში.
+*/
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Block</title>
+    <style>
+        .center-block {
+            position: absolute; /* პოზიცია აბსოლუტური */
+            width: 300px;
+            height: 200px;
+            top: 50%; /* ვერტიკალური ცენტრი */
+            left: 50%; /* ჰორიზონტალური ცენტრი */
+            transform: translate(-50%, -50%); /* ცენტრი ზუსტი */
+            background-color: lightblue; /* ხილვადობისთვის */
+        }
+    </style>
+</head>
+<body>
+    <div class="center-block"></div>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            position: fixed; /* ფიქსირებული ზედა ნაწილში */
+            top: 0;
+            left: 0;
+            width: 100%; /* მთლიანი სიგანე */
+            height: 50px;
+            background-color: #3b5998; /* Facebook-ის ფერი */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            margin-top: 60px; /* მენიუს ადგილის გასათვალისწინებლად */
+            padding: 20px;
+            height: 2000px; /* სქროლვისთვის */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        Facebook Menu
+    </div>
+    <div class="content">
+        Content goes here. Scroll down to see the fixed menu effect.
+    </div>
+</body>
+</html>

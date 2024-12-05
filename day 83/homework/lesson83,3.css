@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column; /* ზევიდან ქვევით განლაგება */
+    background-color: lightgray;
+    padding: 10px;
+  }
+  
+  .child {
+    width: 100%;
+    height: 50px;
+    background-color: steelblue;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin-bottom: 5px; /* დამატებითი სივრცე ელემენტებს შორის */
+  }
+  
