@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დივის ანიმაცია</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .animated-div {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #3498db; /* საწყისი ფერი */
+            animation: changeColorAndTransform 5s ease-in-out forwards;
+        }
+
+        @keyframes changeColorAndTransform {
+            0% {
+                background-color: blue;  
+                transform: rotate(0deg) scale(1);
+            }
+            100% {
+                background-color: red;
+                transform: rotate(360deg) scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-div">
+        როგორ ხარ? :D
+    </div>
+</body>
+</html>
